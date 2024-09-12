@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepe On Crack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tribute">Tribute</a></li>
+            <li><a href="#tokenomics">Tokenomics</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#memes">Meme Generator</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="hero">
+        <img src="assets/" alt="Pepe logo" class="logo">
+        <div class="hero-content">
+            <h1>Brett’s Cool Cousin Riding the Bull Market in Style</h1>
+            <div class="cta-buttons">
+                <a href="https://jup.ag/" class="cta-button" target="_blank">Buy PoC</a>
+                <button class="cta-button copy-button" onclick="copyToClipboard()">CA: <span id="contract-address"></span></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Pepe on Crack</h2>
+            <div class="barrier"></div>
+            <p>Pepe on Crack: The Wildest Meme Coin of the Decade!</p>
+
+            <div class="social-links-about">
+                <a href="https://t.me/" target="_blank" class="social-button">Join Telegram</a>
+                <a href="https://x.com/" target="_blank" class="social-button">Follow on Twitter/X</a>
+                <a href="https://dexscreener.com/" target="_blank" class="social-button">View on Dexscreener</a>
+            </div>
+
+            <img src="assets/" alt="Pepe on crack" class="pepe-image">
+        </div>
+    </section>
+
+    <!-- Tribute Section -->
+    <section id="tribute" class="tribute">
+        <div class="container">
+            <h2>A Matt Furie Tribute</h2>
+            <div class="barrier"></div>
+            <p>
+                Celebrating creativity with Pepe on Crack, we believe in the power of creativity, laughter, and community—values embodied by the legendary Matt Furie and his iconic characters. As we launch this unique memecoin on the Solana blockchain, we pay homage to the whimsical spirit that Matt has brought to the world through his art. Matt Furie’s creations remind us to embrace our individuality and find joy in the absurdities of life.             </p>
+            <p>
+                Welcome to the ultimate degeneracy in the crypto space. Pepe on Crack is here to take memecoins to the next level! 🚀
+            </p>
+        </div>
+        <img src="assets/" alt="Matt Furie Tribute Banner" class="tribute-banner">
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="tokenomics">
+        <div class="container">
+            <h2>Tokenomics</h2>
+            <div class="barrier"></div>
+            <div class="tokenomics-info">
+                <p>PoC's tokenomics are designed for **Moonshot** enthusiasts.
+                 With a fixed supply of 1 billion tokens, our unique bonding curve mechanism ensures steady growth. Once the curve is hit, a Raydium liquidity pool is launched, and tokens are burned to reduce supply. Get ready for exciting pump action!</p>
+            </div>
+            <div class="tokenomics-container">
+                <div class="stat pink-bg">
+                    <h3>Total Supply</h3>
+                    <p>1,000,000,000</p>
+                </div>
+                <div class="stat blue-bg">
+                    <h3>Raydium Pool</h>
+                    <p>Launched when curve is reached</p>
+                </div>
+                <div class="stat yellow-bg">
+                    <h3>Token Burn</h3>
+                    <p>After bonding curve</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="roadmap">
+        <div class="container">
+            <h2>Roadmap</h2>
+            <div class="barrier"></div>
+            <div class="roadmap-timeline">
+                <div class="phase pink-bg">
+                    <h3>Phase 1</h3>
+                    <ul>
+                        <li>Launch on Moonshot</li>
+                        <li>Play Games, build community</li>
+                    </ul>
+                </div>
+                <div class="phase yellow-bg">
+                    <h3>Phase 2</h3>
+                    <ul>
+                        <li>Fatality bots continuous use to stabilize chart</li>
+                        <li>KOL on Ray</li>
+                        <li>Raid and shiller team running 24/7</li>
+                        <li>Deluge bot trending</li>
+                        <li>Finders trending</li>
+                    </ul>
+                </div>
+                <div class="phase blue-bg">
+                    <h3>Phase 3</h3>
+                    <ul>
+                        <li>Determine Supply and LP burn frequency</li>
+                        <li>Evaluate exchanges</li>
+                        <li>CoinGecko Listing</li>
+                        <li>First exchange listing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meme Generator Section -->
+    <section id="memes" class="gallery">
+        <div class="container">
+            <h2>Meme Generator</h2>
+            <p>Click an image to create your meme!</p>
+            <div class="barrier"></div>
+            <div class="gallery-wrapper">
+                <button class="gallery-control prev" onclick="slideGallery(-1)">&#10094;</button>
+                <div class="gallery-slider" id="gallery-slider">
+                    <!-- Images will be dynamically inserted here by JavaScript -->
+                </div>
+                <button class="gallery-control next" onclick="slideGallery(1)">&#10095;</button>
+            </div>
+            <button id="generate-meme-btn" class="cta-button" style="display: none; margin-top: 20px;">Generate Meme</button>
+        </div>
+    </section>
+
+    <!-- Meme Generator Section -->
+    <section id="meme-generator" style="display: none;">
+        <div class="container">
+            <h2>Create Your Meme</h2>
+            <div class="barrier"></div>
+            <div class="meme-generator-content">
+                <div class="input-group">
+                    <input type="text" id="top-text" class="text-input" placeholder="Top Text">
+                    <input type="text" id="bottom-text" class="text-input" placeholder="Bottom Text">
+                    <div class="text-settings">
+                        <label for="text-size">Size:</label>
+                        <input type="number" id="text-size" class="text-input small-input" placeholder="Text Size" value="50">
+                        <label for="text-color">Color:</label>
+                        <input type="color" id="text-color" class="text-input small-input" value="#FFFFFF">
+                        <label for="text-font">Font:</label>
+                        <select id="text-font" class="text-input small-input">
+                            <option value="Impact">Impact</option>
+                            <option value="Arial">Arial</option>
+                            <option value="Comic Sans MS">Comic Sans</option>
+                            <option value="Courier New">Courier</option>
+                            <option value="Verdana">Verdana</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="canvas-container">
+                    <canvas id="meme-canvas"></canvas>
+                </div>
+                <div class="button-group">
+                    <button id="generate-meme" class="cta-button">Generate Meme</button>
+                    <a id="download-meme" class="cta-button" download="meme.png" style="display: none;">Download Meme</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="barrier"></div>
+            <p>&copy; 2024 PoC. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://x.com/" target="_blank">Twitter/X</a>
+                <a href="https://t.me/">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

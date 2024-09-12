@@ -1,0 +1,575 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    line-height: 1.7;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Menu */
+.navbar {
+    background-color: #6dccda; /* ChadBrad's skin color */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #ff80ab;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #000;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero .logo {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.hero-content {
+    margin-top: 20px;
+}
+
+/* Consistent CTA Button Styles */
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Space between the buttons */
+}
+
+.cta-button {
+    background-color: #6dccda;
+    color: #fff;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center; /* Ensure text is centered */
+}
+
+.cta-button:hover {
+    background-color: #ff80ab;
+    transform: scale(1.05);
+}
+
+/* Barrier Lines */
+.barrier {
+    width: 100%;
+    height: 5px;
+    background-color: #6dccda;
+    margin: 40px 0;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    background-color: #000;
+    text-align: center;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #6dccda;
+}
+
+/* Social Links in About Section */
+.social-links-about {
+    margin-bottom: 40px;
+}
+
+.social-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #6dccda;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-button:hover {
+    background-color: #ff80ab;
+    transform: scale(1.05);
+}
+
+/* Tokenomics Section */
+#tokenomics {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #000;
+}
+
+#tokenomics h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #6dccda;
+}
+
+.tokenomics-info {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.tokenomics-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    padding: 30px;
+    border-radius: 15px;
+    width: 220px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.stat h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Color-coded backgrounds for the tokenomics boxes */
+.pink-bg {
+    background-color: #ff80ab;
+}
+
+.blue-bg {
+    background-color: #6dccda;
+}
+
+.yellow-bg {
+    background-color: #f0e20a;
+}
+
+/* Roadmap Section */
+#roadmap {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #000;
+}
+
+#roadmap h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #6dccda;
+}
+
+.roadmap-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.phase {
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.phase.pink-bg {
+    background-color: #ff80ab;
+}
+
+.phase.yellow-bg {
+    background-color: #f0e20a;
+}
+
+.phase.blue-bg {
+    background-color: #6dccda;
+}
+
+.phase h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.phase ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.phase ul li {
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+
+/* Tribute Section Banner */
+.tribute-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+/* Tribute Section */
+#tribute {
+    padding: 60px 20px;
+    background-color: #000;
+    text-align: center;
+}
+
+#tribute h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #6dccda;
+}
+
+#tribute p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+    line-height: 1.8;
+}
+
+/* Meme Generator Section */
+.gallery {
+    padding: 60px 20px;
+    background-color: #6dccda; 
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.gallery p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.gallery-wrapper {
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #6dccda;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.gallery-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.image-container {
+    width: 300px;
+    height: 200px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #f0e20a;
+    background-color: #000;
+    position: relative;
+}
+
+.gallery-slider img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.gallery-slider img:hover {
+    opacity: 0.8; 
+}
+
+.gallery-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+#generate-meme-btn {
+    display: block;
+    margin: 20px auto 0;
+}
+
+/* Meme Generator Section */
+#meme-generator {
+    padding: 60px 20px;
+    background-color: #000;
+    text-align: center;
+}
+
+.meme-generator-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    border: 2px solid #6dccda;
+    background-color: #000;
+    color: #fff;
+}
+
+.text-settings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #6dccda;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.text-settings label {
+    font-size: 0.9rem;
+    color: #6dccda;
+    margin-right: 5px;
+}
+
+.text-settings .small-input {
+    width: 60px;
+    padding: 5px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: 1px solid #6dccda;
+    background-color: #000;
+    color: #fff;
+}
+
+.text-settings select {
+    width: auto;
+    padding: 5px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: 1px solid #6dccda;
+    background-color: #000;
+    color: #fff;
+}
+
+.canvas-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#meme-canvas {
+    width: 100%;
+    height: auto;
+    border: 5px solid #f0e20a;
+    display: none;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#generate-meme,
+#download-meme {
+    width: 100%;
+}
+
+/* Footer Section */
+footer {
+    background-color: #6dccda;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Additional Font Styling */
+.text-settings select {
+    width: auto;
+    padding: 5px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: 1px solid #6dccda;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Draggable Text */
+.draggable {
+    position: absolute;
+    cursor: move;
+    color: white;
+    font-weight: bold;
+    user-select: none;
+    text-align: center;
+    pointer-events: none;
+    padding: 0;
+    margin: 0;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Ensuring text box is visible within the canvas */
+.draggable span {
+    pointer-events: all;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .image-container {
+        width: 300px;
+        height: 220px;
+    }
+
+    .stat {
+        width: 200px;
+        padding: 20px;
+    }
+
+    .tribute-banner {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+
+    .navbar ul li {
+        margin: 0 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .image-container {
+        width: 280px;
+        height: 200px;
+    }
+
+    .stat {
+        width: 170px;
+    }
+
+    .tribute-banner {
+        width: 100%;
+        height: auto;
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 769px) {
+    .image-container {
+        width: 350px;
+        height: 250px;
+    }
+}
