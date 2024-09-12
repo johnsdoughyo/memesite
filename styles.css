@@ -16,7 +16,7 @@ body {
 
 /* Navigation Menu */
 .navbar {
-    background-color: #6dccda; /* ChadBrad's skin color */
+    background-color: #00A9FF; /* Updated color */
     position: sticky;
     top: 0;
     width: 100%;
@@ -42,7 +42,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: #ff80ab;
+    color: #2AD30B; /* Updated hover color */
 }
 
 /* Hero Section */
@@ -72,7 +72,7 @@ body {
 }
 
 .cta-button {
-    background-color: #6dccda;
+    background-color: #00A9FF; /* Updated button color */
     color: #fff;
     padding: 15px 30px;
     text-transform: uppercase;
@@ -82,11 +82,11 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
     display: inline-block;
-    text-align: center; /* Ensure text is centered */
+    text-align: center;
 }
 
 .cta-button:hover {
-    background-color: #ff80ab;
+    background-color: #2AD30B; /* Updated hover color */
     transform: scale(1.05);
 }
 
@@ -94,7 +94,7 @@ body {
 .barrier {
     width: 100%;
     height: 5px;
-    background-color: #6dccda;
+    background-color: #00A9FF; /* Updated color */
     margin: 40px 0;
 }
 
@@ -114,7 +114,7 @@ body {
 #about h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #6dccda;
+    color: #00A9FF; /* Updated color */
 }
 
 /* Social Links in About Section */
@@ -126,7 +126,7 @@ body {
     display: inline-block;
     margin: 10px;
     padding: 15px 30px;
-    background-color: #6dccda;
+    background-color: #2AD30B; /* Updated button color */
     color: #fff;
     text-decoration: none;
     border-radius: 50px;
@@ -135,7 +135,7 @@ body {
 }
 
 .social-button:hover {
-    background-color: #ff80ab;
+    background-color: #2AD30B; /* Updated hover color */
     transform: scale(1.05);
 }
 
@@ -149,7 +149,7 @@ body {
 #tokenomics h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #6dccda;
+    color: #00A9FF; /* Updated color */
 }
 
 .tokenomics-info {
@@ -183,15 +183,15 @@ body {
 
 /* Color-coded backgrounds for the tokenomics boxes */
 .pink-bg {
-    background-color: #ff80ab;
+    background-color: #2AD30B; /* Updated color */
 }
 
 .blue-bg {
-    background-color: #6dccda;
+    background-color: #00A9FF; /* Updated color */
 }
 
 .yellow-bg {
-    background-color: #f0e20a;
+    background-color: #FBFE10; /* Updated color */
 }
 
 /* Roadmap Section */
@@ -204,7 +204,7 @@ body {
 #roadmap h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #6dccda;
+    color: #00A9FF; /* Updated color */
 }
 
 .roadmap-timeline {
@@ -224,15 +224,15 @@ body {
 }
 
 .phase.pink-bg {
-    background-color: #ff80ab;
+    background-color: #2AD30B; /* Updated color */
 }
 
 .phase.yellow-bg {
-    background-color: #f0e20a;
+    background-color: #FBFE10; /* Updated color */
 }
 
 .phase.blue-bg {
-    background-color: #6dccda;
+    background-color: #00A9FF; /* Updated color */
 }
 
 .phase h3 {
@@ -269,7 +269,7 @@ body {
 #tribute h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #6dccda;
+    color: #00A9FF; /* Updated color */
 }
 
 #tribute p {
@@ -282,7 +282,7 @@ body {
 /* Meme Generator Section */
 .gallery {
     padding: 60px 20px;
-    background-color: #6dccda; 
+    background-color: #FBFE10; /* Updated color */
     text-align: center;
 }
 
@@ -301,7 +301,7 @@ body {
 .gallery-wrapper {
     position: relative;
     overflow: hidden;
-    border: 5px solid #6dccda;
+    border: 5px solid #00A9FF; /* Updated color */
     padding: 20px;
     display: flex;
     align-items: center;
@@ -321,7 +321,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid #f0e20a;
+    border: 5px solid #FBFE10; /* Updated color */
     background-color: #000;
     position: relative;
 }
@@ -387,7 +387,7 @@ body {
     padding: 15px;
     font-size: 1.2rem;
     border-radius: 50px;
-    border: 2px solid #6dccda;
+    border: 2px solid #00A9FF; /* Updated color */
     background-color: #000;
     color: #fff;
 }
@@ -398,14 +398,14 @@ body {
     justify-content: center;
     gap: 10px;
     padding: 10px;
-    border: 1px solid #6dccda;
+    border: 1px solid #00A9FF; /* Updated color */
     border-radius: 10px;
     background-color: #000;
 }
 
 .text-settings label {
     font-size: 0.9rem;
-    color: #6dccda;
+    color: #00A9FF; /* Updated color */
     margin-right: 5px;
 }
 
@@ -414,7 +414,7 @@ body {
     padding: 5px;
     font-size: 0.9rem;
     border-radius: 5px;
-    border: 1px solid #6dccda;
+    border: 1px solid #00A9FF; /* Updated color */
     background-color: #000;
     color: #fff;
 }
@@ -424,7 +424,7 @@ body {
     padding: 5px;
     font-size: 0.9rem;
     border-radius: 5px;
-    border: 1px solid #6dccda;
+    border: 1px solid #00A9FF; /* Updated color */
     background-color: #000;
     color: #fff;
 }
@@ -437,7 +437,7 @@ body {
 #meme-canvas {
     width: 100%;
     height: auto;
-    border: 5px solid #f0e20a;
+    border: 5px solid #FBFE10; /* Updated color */
     display: none;
 }
 
@@ -454,7 +454,7 @@ body {
 
 /* Footer Section */
 footer {
-    background-color: #6dccda;
+    background-color: #00A9FF; /* Updated color */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -472,7 +472,7 @@ footer {
     padding: 5px;
     font-size: 0.9rem;
     border-radius: 5px;
-    border: 1px solid #6dccda;
+    border: 1px solid #00A9FF; /* Updated color */
     background-color: #000;
     color: #fff;
 }
